@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:background="@color/yc_color">
+		<ImageView
+   		    android:id="@+id/bar_back"
+   		    android:layout_width="32dp"
+   		    android:layout_height="32dp"
+   		    android:layout_marginTop="8dp"
+   		    android:layout_marginLeft="10dp"
+   		    android:layout_gravity="left"
+   		    android:background="@drawable/bar_bt_bg"
+   		    android:src="@drawable/btn_back" />
+   		<TextView
+   		    android:id="@+id/bar_title"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="48dp"
+   		    android:layout_marginLeft="50dp"
+   		    android:textColor="#ffffff"
+   		    android:textSize="18dp"
+   		    android:gravity="center_vertical"
+   		    android:text="我的活动中心" />
+
+   	</FrameLayout>
+    <LinearLayout 
+        android:id="@+id/linearLayout_item"
+        android:layout_height="120dp"
+        android:layout_width="match_parent"
+      	android:gravity="center_vertical"
+      	android:background="@drawable/activities_bg2"
+      	android:orientation="horizontal"
+      	android:visibility="visible" >
+		<ImageView
+    		android:id="@+id/userPhoto"
+        	android:layout_width="60dp"
+        	android:layout_height="60dp"
+        	android:layout_marginLeft="20dp"
+        	android:src="@drawable/icon_long_circle" />
+	
+		<TextView
+    		android:id="@+id/username"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="小柚子"
+        	android:layout_marginLeft="8dp"
+        	android:textColor="#fff"
+        	android:textSize="18sp" />
+    	
+    </LinearLayout>
+    
+    
+	
+	<LinearLayout 
+        android:id="@+id/linearLayout_sort"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+      	android:orientation="horizontal" >
+		<TextView
+   		    android:id="@+id/tv_wofaqi"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="40dp"
+   		    android:textColor="#ffffff"
+   		    android:textSize="18dp"
+   		    android:gravity="center_vertical|center_horizontal"
+   		    android:background="@drawable/bar_join_activities"
+   		    android:layout_weight="1"
+   		    android:text="我发起" />
+    	<TextView
+   		    android:id="@+id/tv_woyue"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="40dp"
+   		    android:textColor="#ffffff"
+   		    android:textSize="18dp"
+   		    android:gravity="center_vertical|center_horizontal"
+   		    android:background="#999999"
+   		    android:layout_weight="1"
+   		    android:text="我约" />
+    	<TextView
+   		    android:id="@+id/tv_collect"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="40dp"
+   		    android:textColor="#ffffff"
+   		    android:textSize="18dp"
+   		    android:gravity="center_vertical|center_horizontal"
+   		    android:background="#999999"
+   		    android:layout_weight="1"
+   		    android:text="收藏" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/activity_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ececec"
+        android:cacheColorHint="#00000000"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:divider="#55CCCCCC"
+        android:dividerHeight="0px"
+        android:scrollbars="none" />
+</LinearLayout>

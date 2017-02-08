@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<FrameLayout
+	    android:id="@+id/bar"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:background="@color/yc_color">
+   		<TextView
+   		    android:id="@+id/bar_title"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="48dp"
+   		    android:layout_marginLeft="13dp"
+   		    android:textColor="#ffffff"
+   		    android:textSize="18dp"
+   		    android:gravity="center_vertical"
+   		    android:text="日程管理" />
+   		<ImageView
+   		    android:id="@+id/bar_search"
+   		    android:layout_width="28dp"
+   		    android:layout_height="28dp"
+   		    android:layout_marginTop="10dp"
+   		    android:layout_marginRight="63dp"
+   		    android:layout_gravity="right"
+   		    android:background="@drawable/bar_bt_bg"
+   		    android:src="@drawable/tab_search" />
+   		<ImageView
+   		    android:id="@+id/bar_image"
+   		    android:layout_width="32dp"
+   		    android:layout_height="32dp"
+   		    android:layout_marginTop="8dp"
+   		    android:layout_marginRight="13dp"
+   		    android:layout_gravity="right"
+   		    android:background="@drawable/bar_bt_bg"
+   		    android:src="@drawable/tab_add" />
+   	</FrameLayout>
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="#EFEFEF"><!-- android:background="#336600" -->
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />            
+    </android.support.v4.app.FragmentTabHost>
+
+</LinearLayout>

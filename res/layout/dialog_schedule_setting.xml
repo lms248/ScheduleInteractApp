@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:layout_gravity="center"
+    android:minWidth="280dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/material_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/material_card"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/contentView"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:textColor="@color/yc_color"
+                android:textSize="23sp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="time" />
+            <ImageView
+        		android:layout_width="match_parent"
+        		android:layout_height="4dp"
+        		android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+        		android:src="@drawable/line" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp">
+
+                <LinearLayout
+                    android:id="@+id/message_content_view"
+                    android:paddingLeft="23dp"
+                    android:paddingRight="23dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/dialog_edit"
+                        android:textColor="#8a000000"
+                        android:textSize="16sp"
+                        android:text="编辑日程"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/more_item_bg" />
+                    <ImageView
+        				android:layout_width="match_parent"
+        				android:layout_height="2dp"
+                		android:layout_marginTop="3dp"
+                		android:layout_marginBottom="3dp"
+        				android:src="@drawable/line" />
+                    <TextView
+                        android:id="@+id/dialog_alarm"
+                        android:textColor="#8a000000"
+                        android:textSize="16sp"
+                        android:text="开启通知提醒"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/more_item_bg" />
+                    <ImageView
+        				android:layout_width="match_parent"
+        				android:layout_height="2dp"
+                		android:layout_marginTop="3dp"
+                		android:layout_marginBottom="3dp"
+        				android:src="@drawable/line" />
+                    <TextView
+                        android:id="@+id/dialog_open"
+                        android:textColor="#8a000000"
+                        android:textSize="16sp"
+                        android:text="设为公开"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/more_item_bg" />
+                    <ImageView
+        				android:layout_width="match_parent"
+        				android:layout_height="2dp"
+                		android:layout_marginTop="3dp"
+                		android:layout_marginBottom="3dp"
+        				android:src="@drawable/line" />
+                    <TextView
+                        android:id="@+id/dialog_complete"
+                        android:textColor="#8a000000"
+                        android:textSize="16sp"
+                        android:text="标为已完成"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/more_item_bg" />
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

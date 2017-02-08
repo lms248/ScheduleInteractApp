@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:background="@color/yc_color">
+		<ImageView
+   		    android:id="@+id/bar_image_back"
+   		    android:layout_width="32dp"
+   		    android:layout_height="32dp"
+   		    android:layout_marginTop="8dp"
+   		    android:layout_marginLeft="10dp"
+   		    android:layout_gravity="left"
+   		    android:background="@drawable/bar_bt_bg"
+   		    android:src="@drawable/btn_back" />
+   		<TextView
+   		    android:id="@+id/bar_title"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="48dp"
+   		    android:layout_marginLeft="50dp"
+   		    android:textColor="#ffffff"
+   		    android:textSize="18dp"
+   		    android:gravity="center_vertical"
+   		    android:text="XX的日程" />
+   	</FrameLayout>
+   	
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp" />
+    
+	<ImageView
+        android:id="@+id/no_content_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:visibility="gone"
+        android:src="@drawable/no_friend_schedule_tip" />
+</RelativeLayout>

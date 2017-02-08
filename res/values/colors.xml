@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- 应用主颜色 -->
+    <color name="yc_color">#76b729</color>
+    <color name="yc_color_green">#339933</color>
+    
+    <color name="text_color">#222222</color>
+ 	<color name="menu_fragment_background">#B3000000</color>
+    <color name="menu_item_background">#f2f2f2</color>
+    <color name="divider_color">#b5b5b5</color>
+	
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="window_background">#00000000</color>
+	
+    <!-- 活动内容标签颜色 -->
+    <color name="color_tab_sport">#FF9933</color>
+    <color name="color_tab_travel">#99CC99</color>
+    <color name="color_tab_study">#FFCC66</color>
+    <color name="color_tab_casual">#66CCCC</color>
+    <color name="color_tab_orther">#CCCC99</color>
+    
+    
+    
+</resources>

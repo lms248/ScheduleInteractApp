@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rcgl"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	
+    <!-- 允许访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许访问振动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+    <!-- 百度定位sdk权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:name=".app.MuApp"
+        android:icon="@drawable/yc_launcher_icon_1"
+        android:label="@string/app_name"
+        >
+        <activity
+            android:name="com.rcgl.activity.basic.WelcomeActivity"
+            android:theme="@style/Theme.AppStartLoad"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="U1HG3Plch7HbsyOWrx9bQIQQ" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:permission="android.permission.BAIDU_LOCATION_SERVICE"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.4" />
+            </intent-filter>
+        </service>
+        <activity 
+            android:theme="@style/myAppTheme" 
+            android:name="com.rcgl.activity.basic.MainTabActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" ></activity>
+        <activity 
+            android:theme="@style/myAppTheme" 
+            android:name="com.rcgl.activity.user.LoginActivity"
+            android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.user.RegisterActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.user.UserInfoActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.user.ChangePWActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.time.TimeActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.schedule.AddScheduleActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.schedule.UpdateScheduleActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.schedule.SearchScheduleActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.activities.AddActivitiesActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.activities.ActivitiesDetailActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.activities.ShareActivitiesActivity"
+    	    android:screenOrientation="portrait" ></activity>
+		<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.activities.MyActivitiesActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.friend.AddFriendActivity"
+    	    android:screenOrientation="portrait" ></activity>
+		<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.friend.FriendInfoActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.friend.ReadFriendScheduleActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.message.MessageActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.user.HeadPhotoActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/AppTheme" 
+    	    android:name="com.rcgl.uploadfile.PhotoUploadActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/AppTheme" 
+    	    android:name="com.rcgl.activity.nearby.LoginActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/AppTheme" 
+    	    android:name="com.rcgl.activity.nearby.NearbyActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.nearby.NearbyActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/myAppTheme" 
+    	    android:name="com.rcgl.activity.chat.ChatActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	<activity 
+    	    android:theme="@style/AppTheme" 
+    	    android:name="com.rcgl.socket.activity.SocketTestActivity"
+    	    android:screenOrientation="portrait" ></activity>
+    	
+    	
+    	<receiver android:name="com.rcgl.util.notification.AlarmReceiver">
+       		<intent-filter>
+          		<action android:name="MyNotification" />
+       		</intent-filter>
+		</receiver>
+	</application>
+
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:orientation="vertical" >
+    <FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:background="@color/yc_color">
+		<ImageView
+   		    android:id="@+id/bar_image_back"
+   		    android:layout_width="32dp"
+   		    android:layout_height="32dp"
+   		    android:layout_marginTop="8dp"
+   		    android:layout_marginLeft="6dp"
+   		    android:layout_gravity="left"
+   		    android:background="@drawable/bar_bt_bg"
+   		    android:src="@drawable/btn_back" />
+   		<TextView
+   		    android:id="@+id/bar_title"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="48dp"
+   		    android:textColor="#ffffff"
+   		    android:textSize="18dp"
+   		    android:gravity="center_vertical"
+   		    android:layout_gravity="center_horizontal"
+   		    android:text="活动分享" />
+
+   		<ImageView
+   		    android:id="@+id/bar_image_send"
+   		    android:layout_width="38dp"
+   		    android:layout_height="38dp"
+   		    android:layout_marginTop="5dp"
+   		    android:layout_marginRight="10dp"
+   		    android:layout_gravity="right"
+   		    android:background="@drawable/bar_bt_bg"
+   		    android:src="@drawable/ic_action_submit" />
+   	</FrameLayout>
+	<FrameLayout 
+        android:id="@+id/search_item"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#eeeeee"
+        android:visibility="gone"
+        android:orientation="horizontal">
+    	<EditText 
+        	android:id="@+id/search_text"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:background="@drawable/bg_edittext"
+        	android:layout_marginTop="6dp"
+        	android:layout_marginBottom="6dp"
+        	android:layout_marginLeft="10dp"
+        	android:layout_marginRight="10dp"
+        	android:padding="5dp"
+        	android:hint="搜索好友" />
+		<ImageView
+	    	android:id="@+id/search_clear"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_marginRight="10dp"
+			android:layout_gravity="center_vertical|right"
+			android:textColor="#ffffff"
+			android:src="@drawable/delete"
+			android:visibility="gone" />
+	</FrameLayout>
+    <ImageView 
+	    android:id="@+id/search_bottom_line"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone"
+	    android:src="@drawable/center_line"/>
+    
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:background="#ffffff" />
+    
+    
+</LinearLayout>

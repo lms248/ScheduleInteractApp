@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:orientation="vertical" >
+	
+    <FrameLayout 
+        android:id="@+id/search_item"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#eeeeee"
+        android:visibility="gone"
+        android:orientation="horizontal">
+    	<EditText 
+        	android:id="@+id/search_text"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:background="@drawable/bg_edittext"
+        	android:layout_marginTop="6dp"
+        	android:layout_marginBottom="6dp"
+        	android:layout_marginLeft="10dp"
+        	android:layout_marginRight="10dp"
+        	android:padding="5dp"
+        	android:hint="请输入日程关键字" />
+		<ImageView
+	    	android:id="@+id/search_clear"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_marginRight="10dp"
+			android:layout_gravity="center_vertical|right"
+			android:textColor="#ffffff"
+			android:src="@drawable/delete"
+			android:visibility="gone" />
+	</FrameLayout>
+	<ImageView 
+	    android:id="@+id/search_bottom_line"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone"
+	    android:src="@drawable/center_line"/>
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+    <!-- <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" > -->
+        
+    <com.rcgl.swipemenulistview.util.SwipeMenuListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+	<!-- </android.support.v4.widget.SwipeRefreshLayout> -->
+	
+    <ImageView
+        android:id="@+id/no_content_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:src="@drawable/no_schedule_tip" />
+	</RelativeLayout>
+	
+</LinearLayout>

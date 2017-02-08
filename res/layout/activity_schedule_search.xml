@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:orientation="vertical" >
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:background="@color/yc_color" >
+		<EditText 
+		    android:id="@+id/search_text"
+		    android:layout_width="match_parent"
+		    android:layout_height="34dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="65dp"
+		    android:paddingLeft="6dp"
+		    android:paddingTop="4dp"
+		    android:paddingBottom="4dp"
+		    android:layout_gravity="center_vertical"
+		    android:background="@drawable/bg_edittext"
+		    android:textColor="#666666" />
+		<ImageView 
+		    android:id="@+id/search_clear"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+		    android:layout_marginRight="70dp"
+		    android:layout_gravity="center_vertical|right"
+		    android:textColor="#ffffff"
+		    android:src="@drawable/delete"
+		    android:visibility="gone" />
+		<TextView 
+		    android:id="@+id/search_close"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="20dp"
+		    android:layout_gravity="center_vertical|right"
+		    android:textColor="#ffffff"
+		    android:text="取消"/>
+		
+   	</FrameLayout>
+   	
+    <com.rcgl.swipemenulistview.util.SwipeMenuListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000" />
+    
+	
+</LinearLayout>
